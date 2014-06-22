@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var userformrouter = require('./routes/userform');
+var formrouter = require('./routes/userform');
 
 var app = express();
 
@@ -22,7 +22,8 @@ app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/userform', userformrouter.userform);
+app.use('/userform', formrouter.userform);
+app.use('/supform', formrouter.supform);
 
 app.use('/', routes);
 app.use('/users', users);
