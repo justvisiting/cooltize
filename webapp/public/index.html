@@ -31,13 +31,23 @@
     $(function(){
       $("#header").load("header.html"); 
       $("#footer").load("footer.html"); 
+      if ($.url().param('usersuccess') == '1') {
+        $('usersuccessDiv').show();
+      }
     });
+
+
     </script>
 </head>
 
 <body>
     <!-- HEADER  -->
     <div id="header"></div>
+
+    <div id='usersuccessDiv' class="alert alert-success" style="visibility: hidden">
+        Thanks for signing up. We will get back to you shortly
+    </div>
+
 
     <div id="myCarousel" class="carousel slide">
         <!-- Indicators -->
@@ -55,7 +65,9 @@
                 </div>
                 <div class="carousel-caption">
                     <h1>Massage Anywhere Anytime</h1>
-                </div>
+                    <a class="btn btn-info" href="userform.html"> SIGN UP FOR MASSAGE</a>
+                    <a class="btn btn-info" href="sup1.html"> BECOME COOLTIZE THERAPIST</a>
+            </div>
             </div>
             <div class="item">
                 <div class="fill">
