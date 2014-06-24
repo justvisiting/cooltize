@@ -1,0 +1,7 @@
+To get code in zip file from github:
+
+curl -u 'justvisiting' -L -o master.zip  https://github.com/justvisiting/cooltize/zipball/master/
+unzip master.zip -d unzip_<<todaysDate>>/
+copy webapp to cooltize/webapp
+run nodejs bin\www &
+
