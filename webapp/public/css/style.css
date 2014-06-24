@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document for cooltize */
+
+.signup-form {
+display: block;
+margin: 0 auto;
+max-width: 505px;
+}
+
+.logo-container {
+height: auto;
+margin: 100px auto 50px;
+width: 250px;
+}
+
+.center-container {
+align-content: center;
+}

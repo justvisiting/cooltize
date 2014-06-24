@@ -18,7 +18,7 @@ mailer.sendmail(body, function(error, response) {
 		next(new Error('error submitting form, please try again'));
 	}
 	else {
-		res.redirect('index.html?usersuccess=1');
+		res.redirect('index.html?success=user');
 	}
 });
 
@@ -62,7 +62,7 @@ mailer.sendmail(body, function(error, response) {
 		//res.send({retStatus : 'Success',
       	//	redirectTo: '/index.html'});
 
-		res.redirect('index.html?supsuccess=1');
+		res.redirect('index.html?success=sup');
 	}
 });
 
