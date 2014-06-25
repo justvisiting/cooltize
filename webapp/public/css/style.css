@@ -16,3 +16,11 @@ width: 250px;
 .center-container {
 align-content: center;
 }
+
+.contactpage-contact {
+	    position: absolute;
+	margin-top: 50px;
+	min-width: 300px;
+	min-height: 50px;
+	display: inline;
+}
