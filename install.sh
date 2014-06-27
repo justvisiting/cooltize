@@ -1,7 +1,7 @@
-sudo stop ionosui
-curl -u 'justvisiting' -L -o master.zip  https://github.com/ionosnetworks/lft/zipball/master/
+sudo stop /cooltiz-webapp-nodejs
+curl -u 'justvisiting' -L -o master.zip  https://github.com/justvisiting/cooltize/zipball/master/
 unzip master.zip -d tmp
-cd tmp/*/ui/
-sudo cp ionosui.conf /etc/init
-cp -r ./* ~/lft/ui/
-sudo start ionosui
+cd tmp/*/webapp/
+sudo cp /cooltiz-webapp-nodejs.conf /etc/init
+cp -r ./* ~/cooltize/webapp/
+sudo start /cooltiz-webapp-nodejs
