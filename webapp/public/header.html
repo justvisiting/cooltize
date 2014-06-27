@@ -1,5 +1,62 @@
 
+<!-- Add custom CSS here -->
+    <head>
+    <link href="css/header.css" rel="stylesheet">
+
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+ <script src="js/jquery-1.10.2.js"></script>
+  <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+<script>
+function urlParam(name){
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    if (results==null){
+            return null;
+        }
+        else{
+            return results[1] || 0;
+        }      
+}
+
+
+function displayMsg(divId) {
+    //$('#msgbox').innerHTML = msg;
+    $('#' + divId).css('display', 'block');
+}
+
+function showmsg() {
+     var success = urlParam('success');  
+      if (success == 'user') {
+        displayMsg('msguserDiv');// 'Thank you for participating in our pre launch offer');//, 'We will get back to you soon');
+      }
+      else if (success =='sup') {
+        displayMsg('msgsupDiv');//'Thank you for applying to become Cooltize Therapist');//, 'We will get back to you soon')
+      }
+}
+
+
+function closemsg(){
+   // alert('hi');
+    $('#msguserDiv').css('display','none');
+    $('#msgsupDiv').css('display','none');
+}
+
+
+</script>
+
+
+
+<div id='msguserDiv' class="alert-message success align-right" style="display:none">
+    <a class="close" href="javascript:closemsg()">×</a>
+    <p id='msgbox'>Thank you for participating in our pre launch offer</p>
+  </div>
+  
+<div id='msgsupDiv' class="alert-message success align-right" style="display:none">
+    <a class="close" href="javascript:closemsg()">×</a>
+    <p id='msgbox'>Thank you for applying to become Cooltize Therapist</p>
+  </div>
+  
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -31,3 +88,11 @@
         </div>
         <!-- /.container -->
     </nav>
+
+<script>
+
+$(function(){
+    showmsg();
+ });
+ 
+ </script>

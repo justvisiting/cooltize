@@ -1,0 +1,6 @@
+#ionos custom rules
+/var/log/cooltizewebappnodejs.sys.log
+{
+rotate 15
+size 5M
+}
