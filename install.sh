@@ -1,5 +1,6 @@
-sudo stop /cooltiz-webapp-nodejs
+sudo stop cooltize-webapp-nodejs
 curl -u 'justvisiting' -L -o master.zip  https://github.com/justvisiting/cooltize/zipball/master/
+rm -rf tmp/*
 unzip master.zip -d tmp
 cd tmp/*/webapp/
 sudo cp cooltize-webapp-nodejs.conf /etc/init
