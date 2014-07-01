@@ -1,4 +1,4 @@
-#ionos custom rules
+#cooltize custom rules
 /var/log/cooltizewebappnodejs.sys.log
 {
 rotate 15

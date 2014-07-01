@@ -18,12 +18,11 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
+    <link href="css/SignupForms.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
+    
     <!-- Add custom CSS here -->
     <link href="css/landing-page.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/SignupForms.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">      
     <script> 
     $(function(){
       $("#header").load("header.html"); 
@@ -31,45 +30,19 @@
     });
     </script>
 
-<!--https://github.com/sciactive/pnotify -->
-<script type="text/javascript" src="js/pnotify.custom.min.js"></script>
-<link href="css/pnotify.custom.min.css" media="all" rel="stylesheet" type="text/css" />
 
-
-<script type="text/javascript">
-function x(){
-  var myStack = {"dir1":"down", "dir2":"right", "push":"top"};
-  new PNotify({
-    title: 'Thank you for participating in our pre launch offer',
-    text: 'We will get back to you soon',
-    addclass: "stack-custom",
-    stack: myStack, //{"dir1": "down", "dir2": "right", "push": "top", "spacing1": 0, "spacing2": 0},
-    delay: 30000,
-    type: "success",
-    width: '500px',
-    before_open: function(pnotify){
-    pnotify.css({
-      "top":"50px", 
-      "left": ($(window).width() / 2) - (pnotify.width() / 2)
-    })}
-  });
-};
-
-</script>
 
 </head>
 
 
 
-<body onload="x()">
+<body>
 
 
     <!-- HEADER  -->
-  
   <header class="topbanner">
     <div class="bannerText"/>
   </header>
-
 
   <div class="container">
 
@@ -78,14 +51,13 @@ function x(){
         <div class="col-lg-3 signup-form">
         </div>
         <div class="col-lg-6 signup-form">
-
             <div class="logo-container text-center">
                 <h4>
                     SIGN UP FOR MASSAGE
                 </h4>
              </div>
 
-              <form class="form-horizontal" role="form" method="post" action='/userform'>
+              <form class="form" role="form" method="post" action='/userform'>
               <div class="form-group">
                 <label for="exampleInputPassword1">Name</label>
                 <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter name" name="user[name]">
@@ -105,9 +77,7 @@ function x(){
                 <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter city" name="user[city]">
               </div>
               
-            <div class="breadcrumb-padding-vertical">                
-              <button type="submit" class="btn btn-info btn-block breadcrumb-padding-vertical">Submit</button>
-            </div>
+            <button type="submit" class="btn btn-info btn-block breadcrumb-padding-vertical">Submit</button>
           </form>
 
       </div>
