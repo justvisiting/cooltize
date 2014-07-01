@@ -1,147 +1,149 @@
-  <!DOCTYPE html>
-  <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-  <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="">
-      <meta name="author" content="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-      <title>Cooltize</title>
+    <title>Cooltize</title>
 
-      <!-- Bootstrap core CSS -->
-      <link href="css/bootstrap.css" rel="stylesheet">
-      <link href="css/bootstrap.min.css" rel="stylesheet">  
-      <!-- Custom Google Web Font -->
-      <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-      <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap core CSS -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom Google Web Font -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
-      <!-- Add custom CSS here -->
-      <link href="css/landing-page.css" rel="stylesheet">
-      <script src="js/jquery-1.10.2.js"></script>
-      <script src="js/bootstrap.js"></script>
-      <script> 
-      $(function(){
-        $("#header").load("header.html"); 
-        $("#footer").load("footer.html"); 
-      });
-      </script>
-
-  <!--https://github.com/sciactive/pnotify -->
-  <script type="text/javascript" src="js/pnotify.custom.min.js"></script>
-  <link href="css/pnotify.custom.min.css" media="all" rel="stylesheet" type="text/css" />
-
-
-  <script type="text/javascript">
-  function x(){
-    var myStack = {"dir1":"down", "dir2":"right", "push":"top"};
-    new PNotify({
-      title: 'Thank you for participating in our pre launch offer',
-      text: 'We will get back to you soon',
-      addclass: "stack-custom",
-      stack: myStack, //{"dir1": "down", "dir2": "right", "push": "top", "spacing1": 0, "spacing2": 0},
-      delay: 30000,
-      type: "success",
-      width: '500px'
+    <link href="css/SignupForms.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">  
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!-- Add custom CSS here -->
+    <link href="css/landing-page.css" rel="stylesheet">
+    <script> 
+    $(function(){
+      $("#header").load("header.html"); 
+      $("#footer").load("footer.html"); 
     });
-  };
-
-  </script>
-
-  </head>
+    </script>
 
 
 
-  <body>
-
-  <div class="alert alert-success">
-    Success
-  </div>
-
-      <!-- HEADER  -->
-    
-
-    <div class="container">
-    <form role="form" method="post" action='/supform'>
-    <div class="form-group">
-      <label for="exampleInputPassword1">Name</label>
-      <input type="name" class="form-control" id="exampleInputPassword1" placeholder="Enter name" name="user[name]">
-    </div>
-
-    <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" name="user[email]">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">Phone</label>
-      <input type="phone" class="form-control" id="exampleInputPassword1" placeholder="Enter phone" name="user[phone]">
-    </div>
-    
-    <div class="form-group">
-      <label for="exampleInputPassword1">City</label>
-      <input type="phone" class="form-control" id="exampleInputPassword1" placeholder="Enter city" name="user[city]">
-    </div>
-    
-    <div class="form-group">
-      <label for="exampleInputPassword1">Licensed to work in California</label>
-      <label class="checkbox-inline">
-      <input type="radio" id="licensedToworkInCA" value='Yes' name="user[licensedInCA]"> Yes
-      </label>
-
-      <label class="checkbox-inline">
-      <input type="radio" id="licensedToworkInCA" value='No' name="user[licensedInCA]"> No
-    </label>
-
-    </div>
-
-    <div class="form-group">
-      <label for="exampleInputPassword1">Certification</label>
-      <input type="phone" class="form-control" id="exampleInputPassword1" placeholder="Enter certification details" name="user[certification]">
-    </div>
-
-    <div class="form-group">
-      <label for="exampleInputPassword1">Massage types offered</label>
-      <input type="phone" class="form-control" id="exampleInputPassword1" placeholder="Enter massage types offered" name="user[massageTypeOffered]">
-    </div>
+</head>
 
 
-    <div class="form-group">
-      <label for="exampleInputPassword1">Years of experience</label>
-      <input type="phone" class="form-control" id="exampleInputPassword1" placeholder="Enter experience" name="user[experience]">
-    </div>
 
-    <div class="form-group">
-      <label for="exampleInputPassword1">Do you have portable massage table</label>
-         <label class="checkbox-inline">
-        <input type="radio" id="havemassagetable" value='Yes' name="user[havemassagetable]"> Yes
-      </label>
+<body>
 
-      <label class="checkbox-inline">
-      <input type="radio" id="havemassagetable" value='No' name="user[havemassagetable]"> No
-      </label>
-    </div>
 
-   <div class="form-group">
-      <label for="exampleInputPassword1">How far you are willing to travel</label>
-      <label class="checkbox-inline">
-       
-        <select name='user[travel]'>
-          <!-- dropdown menu links -->
-          <option type="radio"  value='20 Miles'> 20 Miles</option>
-          <option type="radio"  value='30 Miles'> 30 Miles</option>
-          <option type="radio"  value='40 Miles' selected="selected"> 40 Miles</option>
-      </select>
-          
-      </label>
-  </div>
-    
-    </div>
+    <!-- HEADER  -->
+  <header class="topbanner">
+    <div class="bannerText"/>
+  </header>
 
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
+  <div class="container">
 
-  </div>
-      <!-- FOOTER  -->
-      <div id="footer"></div>
+  <div class="row">
 
-    </body>
+        <div class="col-lg-3 signup-form">
+        </div>
+        <div class="col-lg-6 signup-form">
+
+            <div class="logo-container text-center">
+                <h4>
+                     SIGN UP 
+                </h4>
+             </div>
+            <form role="form" method="post" action='/supform'>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Name</label>
+              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter name" name="user[name]">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" name="user[email]">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Phone</label>
+              <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="Enter phone" name="user[phone]">
+            </div>
+            
+            <div class="form-group">
+              <label for="exampleInputPassword1">City</label>
+              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter city" name="user[city]">
+            </div>
+            
+            <div class="form-group">
+              <label for="exampleInputPassword1">Licensed to work in California</label>
+              <label class="checkbox-inline">
+              <input type="radio" id="licensedToworkInCA" value='Yes' name="user[licensedInCA]"> Yes
+              </label>
+
+              <label class="checkbox-inline">
+              <input type="radio" id="licensedToworkInCA" value='No' name="user[licensedInCA]"> No
+            </label>
+
+            </div>
+            
+
+            <div class="form-group">
+              <label for="exampleInputPassword1">Certification</label>
+              <input type="phone" class="form-control" id="exampleInputPassword1" placeholder="Enter certification details" name="user[certification]">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputPassword1">Massage types offered</label>
+              <input type="phone" class="form-control" id="exampleInputPassword1" placeholder="Enter massage types offered" name="user[massageTypeOffered]">
+            </div>
+
+
+            <div class="form-group">
+              <label for="exampleInputPassword1">Years of experience</label>
+              <input type="phone" class="form-control" id="exampleInputPassword1" placeholder="Enter experience" name="user[experience]">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputPassword1">Do you have portable massage table</label>
+                 <label class="checkbox-inline">
+                <input type="radio" id="havemassagetable" value='Yes' name="user[havemassagetable]"> Yes
+              </label>
+
+              <label class="checkbox-inline">
+              <input type="radio" id="havemassagetable" value='No' name="user[havemassagetable]"> No
+              </label>
+            </div>
+
+           <div class="form-group">
+              <label for="exampleInputPassword1">How far you are willing to travel</label>
+              <label class="checkbox-inline">
+               
+                <select name='user[travel]'>
+                  <!-- dropdown menu links -->
+                  <option type="radio"  value='20 Miles'> 20 Miles</option>
+                  <option type="radio"  value='30 Miles'> 30 Miles</option>
+                  <option type="radio"  value='40 Miles' selected="selected"> 40 Miles</option>
+              </select>
+                  
+              </label>
+          </div>
+            
+            </div>
+
+   <button type="submit" class="btn btn-info btn-block breadcrumb-padding-vertical">Submit</button>
+          </form>
+        </div>
+</div>
+</div>
+
+<div class="signup-form"> 
+</div>
+    <!-- FOOTER  -->
+    <div id="footer"></div>
+
+  </body>
