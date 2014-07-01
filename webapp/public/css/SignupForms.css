@@ -13,7 +13,7 @@
     padding-top: 38px;
     position: absolute;
     top: 0px;
-    width: 1263px;
+    width: 100%;
 }
 
 .bannerText {
@@ -35,8 +35,8 @@
     height: 23px;
     line-height: 21.979999542236328px;
     margin-bottom: 0px;
-    margin-left: 40%;
-    margin-right: 30%;
+    margin-left: auto;
+    margin-right:auto;
     margin-top: 0px;
     width: 167px;
 }
