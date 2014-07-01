@@ -11,9 +11,14 @@
 
     <!-- Bootstrap core CSS -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    
+   
+
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/css/bootstrapvalidator.css" rel="stylesheet">
+
+
     <!-- Custom Google Web Font -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
@@ -27,6 +32,11 @@
     $(function(){
       $("#header").load("header.html"); 
       $("#footer").load("footer.html"); 
+      
+    });
+
+    $(document).ready(function() {
+      $('#attributeForm').bootstrapValidator();
     });
     </script>
 
@@ -57,24 +67,31 @@
                 </h4>
              </div>
 
-              <form class="form" role="form" method="post" action='/userform'>
+              <form id="attributeForm" class="form" role="form" method="post" action='/userform'>
               <div class="form-group">
                 <label for="exampleInputPassword1">Name</label>
-                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter name" name="user[name]">
+                <input type="text" class="form-control" id="user name" placeholder="Enter name" name="user[name]"
+                 data-bv-notempty data-bv-notempty-message="Name is required" 
+                >
               </div>
 
               <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" name="user[email]">
+                <input type="email" class="form-control" id="emailid" placeholder="Enter email" name="user[email]"
+                data-bv-notempty data-bv-notempty-message="Email is required" 
+                data-bv-emailaddress="true" data-bv-emailaddress-message="Please enter valid email"
+                >
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Phone</label>
-                <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="Enter phone" name="user[phone]">
+                <input type="phone" class="form-control" id="phonenum" placeholder="Enter phone" name="user[phone]"
+                data-bv-phone="true" data-bv-phone-message="Please enter valid phone number"
+                >
               </div>
               
               <div class="form-group">
                 <label for="exampleInputPassword1">City</label>
-                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter city" name="user[city]">
+                <input type="text" class="form-control" id="city" placeholder="Enter city" name="user[city]">
               </div>
               
             <button type="submit" class="btn btn-info btn-block breadcrumb-padding-vertical">Submit</button>

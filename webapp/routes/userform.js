@@ -38,6 +38,7 @@ var massageTypeOffered = req.body.user.massageTypeOffered;
 var experience = req.body.user.experience;
 var havemsgTable = req.body.user.havemassagetable;
 var travel = req.body.user.travel;
+var zip = req.body.user.zip;
 
 //var 
 //var licensed1 = req.body.user.
@@ -52,7 +53,7 @@ body = body + '<p> Massage Type Offered:' + massageTypeOffered + '</p>';
 body = body + '<p> Experience:' + experience + '</p>';
 body = body + '<p> Have Massage Table:' + havemsgTable + '</p>';
 body = body + '<p> Travel:' + travel + '</p>';
-
+body = body + '<p> Zip:' + zip + '</p>';
 
 mailer.sendmail(body, function(error, response) {
 	if (error) {
