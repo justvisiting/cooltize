@@ -45,144 +45,181 @@
 
 
 <body>
-
-
     <!-- HEADER  -->
-  <header class="topbanner">
-    <div class="bannerText"/>
-  </header>
+    <a href="index.html">
+        <header class="topbanner">
+            <div class="bannerText"></div>
+        </header>      
+    </a>
+    <br/><br/><br/><br/><br/>
+    <div class="threapist-headermessage">
+        <p>
+            <a href="index.html" target="_blank"><br>Cooltize</a> 
+            not only makes it easier than ever before for customers to 
+            book and receive a massage,  
+            <em>
+                but we also makes it easier to be a massage therapist.
+            </em>
+            <strong>All </strong>
+            <strong>
+                of our therapists have the flexibility to set their own schedules, 
+                and currently make up to $100/hour!
+            </strong>
+            <br><br>
+            <u><font color="red">Are you a sole practitioner?</font></u> 
+              We will manage your clientele, work according to your schedule and
+              even handle the booking, support, cancellations for you. You won't
+              have to worry about marketing yourself ever again!
+            <br><br>
+            <u>
+                <font color="red">
+                    Already practicing massage at a day spa or similar business?
+                </font>
+            </u>
+            <strong> </strong>
+            We want to make it as easy as possible for you to become 
+            your own boss. Set your own hours - you can use Cooltize every day, 
+            or as little as a few hours per week, and can even work 
+            elsewhere if you'd like! 
+            <strong>
+                On top of that, you'll make considerably more per massage 
+                than the average massage therapist currently does. 
+            </strong>
+            <br>
+            <br>
+            We're looking to partner with great massage therapists who want to 
+            grow their business by providing great service to their customers 
+            without getting distracted by the hassles of marketing, 
+            schedule management, booking, cancellations and so on. Sounds like 
+            you?
+            <strong>
+                Just fill out the form below and we will get in touch with you!
+            </strong>
+        </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 signup-form"></div>
+                <div class="col-lg-6 signup-form">
+                    <div class="logo-containertherapist text-center">                             
+                        <h4>
+                            SIGN UP 
+                        </h4>
+                     </div>
+                    <form id="sup2Form" class="form" role="form" method="post" action='/supform'>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Name</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter name" name="user[name]"
+                         data-bv-notempty data-bv-notempty-message="Name is required" 
+                        >
+                      </div>
 
-  <div class="container">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" name="user[email]"
+                        data-bv-notempty data-bv-notempty-message="Email is required" 
+                        data-bv-emailaddress="true" data-bv-emailaddress-message="Please enter valid email"
+                        >
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Phone</label>
+                        <input type="phone" class="form-control" id="exampleInputPassword1" placeholder="Enter phone" name="user[phone]"
+                        data-bv-phone="true" data-bv-phone-message="Please enter valid phone number"
+                        >
+                      </div>
 
-  <div class="row">
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">City</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter city" name="user[city]"
+                      data-bv-notempty data-bv-notempty-message="City is required"
+                      >
+                    </div>
 
-        <div class="col-lg-3 signup-form">
-        </div>
-        <div class="col-lg-6 signup-form">
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Zip</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter zip" name="user[zip]"
+                      data-bv-notempty data-bv-notempty-message="Zip is required"
+                      >
+                    </div>
 
-            <div class="logo-container text-center">
-                <h4>
-                     SIGN UP 
-                </h4>
-             </div>
-            <form id="sup2Form" class="form" role="form" method="post" action='/supform'>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Name</label>
-                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter name" name="user[name]"
-                 data-bv-notempty data-bv-notempty-message="Name is required" 
-                >
-              </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Licensed to work in California</label>
+                      <label class="checkbox-inline">
+                      <input type="radio" id="licensedToworkInCA" value='Yes' name="user[licensedInCA]"> Yes
+                      </label>
 
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" name="user[email]"
-                data-bv-notempty data-bv-notempty-message="Email is required" 
-                data-bv-emailaddress="true" data-bv-emailaddress-message="Please enter valid email"
-                >
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Phone</label>
-                <input type="phone" class="form-control" id="exampleInputPassword1" placeholder="Enter phone" name="user[phone]"
-                data-bv-phone="true" data-bv-phone-message="Please enter valid phone number"
-                >
-              </div>
-            
-            <div class="form-group">
-              <label for="exampleInputPassword1">City</label>
-              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter city" name="user[city]"
-              data-bv-notempty data-bv-notempty-message="City is required"
-              >
-            </div>
-            
-            <div class="form-group">
-              <label for="exampleInputPassword1">Zip</label>
-              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter zip" name="user[zip]"
-              data-bv-notempty data-bv-notempty-message="Zip is required"
-              >
-            </div>
+                      <label class="checkbox-inline">
+                      <input type="radio" id="licensedToworkInCA" value='No' name="user[licensedInCA]" checked> No
+                    </label>
 
-            <div class="form-group">
-              <label for="exampleInputPassword1">Licensed to work in California</label>
-              <label class="checkbox-inline">
-              <input type="radio" id="licensedToworkInCA" value='Yes' name="user[licensedInCA]"> Yes
-              </label>
-
-              <label class="checkbox-inline">
-              <input type="radio" id="licensedToworkInCA" value='No' name="user[licensedInCA]" checked> No
-            </label>
-
-            </div>
-            
-
-            <div class="form-group">
-              <label for="exampleInputPassword1">Certification</label>
-              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter certification details" name="user[certification]"
-                data-bv-notempty data-bv-notempty-message="Certification is required"
-              >
-            </div>
-
-            <div class="form-group">
-              <label for="exampleInputPassword1">Massage types offered</label>
-              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter massage types offered" name="user[massageTypeOffered]"
-               data-bv-notempty data-bv-notempty-message="Massage types offered is required"
-              >
-            </div>
+                    </div>
 
 
-            <div class="form-group">
-              <label for="exampleInputPassword1">Years of experience</label>
-            
-               <label class="checkbox-inline">
-               
-                <select name='user[experience]'>
-                  <!-- dropdown menu links -->
-                  <option type="radio"  value='less than 1 Year' selected="selected"> &lt; 1 Year </option>
-                  <option type="radio"  value='1 to 3 Years'> &lt; 1-3 Years</option>
-                  <option type="radio"  value='3 to 5 Years'> &lt; 3-5 Years</option>
-                  <option type="radio"  value='greater than 5 Years'> &gt; 5 Years </option>
-              </select>
-                  
-              </label>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Certification</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter certification details" name="user[certification]"
+                        data-bv-notempty data-bv-notempty-message="Certification is required"
+                      >
+                    </div>
 
-            </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Massage types offered</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter massage types offered" name="user[massageTypeOffered]"
+                       data-bv-notempty data-bv-notempty-message="Massage types offered is required"
+                      >
+                    </div>
 
-            <div class="form-group">
-              <label for="exampleInputPassword1">Do you have portable Massage Table</label>
-                 <label class="checkbox-inline">
-                <input type="radio" id="havemassagetable" value='Yes' name="user[havemassagetable]"> Yes
-              </label>
 
-              <label class="checkbox-inline">
-              <input type="radio" id="havemassagetable" value='No' name="user[havemassagetable]" checked> No
-              </label>
-            </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Years of experience</label>
 
-           <div class="form-group">
-              <label for="exampleInputPassword1">How far are you willing to travel</label>
-              <label class="checkbox-inline">
-               
-                <select name='user[travel]'>
-                  <!-- dropdown menu links -->
-                  <option type="radio"  value='20 Miles'> Within my area </option>
-                  <option type="radio"  value='20 Miles'> &lt; 20 Miles</option>
-                  <option type="radio"  value='30 Miles'> &lt; 30 Miles</option>
-                  <option type="radio"  value='40 Miles' selected="selected"> &lt; 40 Miles</option>
-              </select>
-                  
-              </label>
-          </div>
-            
-            </div>
+                       <label class="checkbox-inline">
 
-            <button type="submit" class="btn btn-info btn-block breadcrumb-padding-vertical">Submit</button>
-          </form>
-        </div>
-</div>
-</div>
+                        <select name='user[experience]'>
+                          <!-- dropdown menu links -->
+                          <option type="radio"  value='less than 1 Year' selected="selected"> &lt; 1 Year </option>
+                          <option type="radio"  value='1 to 3 Years'> &lt; 1-3 Years</option>
+                          <option type="radio"  value='3 to 5 Years'> &lt; 3-5 Years</option>
+                          <option type="radio"  value='greater than 5 Years'> &gt; 5 Years </option>
+                      </select>
 
-<div class="signup-form"> 
-</div>
-    <!-- FOOTER  -->
-    <div id="footer"></div>
+                      </label>
 
+                    </div>
+
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Do you have portable Massage Table</label>
+                         <label class="checkbox-inline">
+                        <input type="radio" id="havemassagetable" value='Yes' name="user[havemassagetable]"> Yes
+                      </label>
+
+                      <label class="checkbox-inline">
+                      <input type="radio" id="havemassagetable" value='No' name="user[havemassagetable]" checked> No
+                      </label>
+                    </div>
+
+                   <div class="form-group">
+                      <label for="exampleInputPassword1">How far are you willing to travel</label>
+                      <label class="checkbox-inline">
+
+                        <select name='user[travel]'>
+                          <!-- dropdown menu links -->
+                          <option type="radio"  value='20 Miles'> Within my area </option>
+                          <option type="radio"  value='20 Miles'> &lt; 20 Miles</option>
+                          <option type="radio"  value='30 Miles'> &lt; 30 Miles</option>
+                          <option type="radio"  value='40 Miles' selected="selected"> &lt; 40 Miles</option>
+                      </select>
+
+                      </label>
+                  </div>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-info btn-block breadcrumb-padding-vertical">Submit</button>
+                  </form>
+                </div>
+    </div>
+        <div class="signup-form"></div>
+        <!-- FOOTER  -->
+        <div id="footer"></div>
+    </div>    
   </body>
