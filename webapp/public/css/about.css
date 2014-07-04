@@ -1,5 +1,40 @@
 
+.row-about {
+  margin-right: 0px;
+  margin-left: 5px;
+}
 .msgtxt {
 font-family: ff-clan-web-pro-wide,sans-serif;
 font-weight: 400;
+}
+.signupbuttondiv{
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    display: block;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    height: 34px;
+    line-height: 20px;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    width: 355px;
+}
+.signupbutton{
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    display: block;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    margin-top: 15px;
+    padding-left: 0px;
 }
